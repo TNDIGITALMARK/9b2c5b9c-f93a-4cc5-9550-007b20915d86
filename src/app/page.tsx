@@ -3,7 +3,6 @@
 import { Header } from '@/components/marketing/Header';
 import { Footer } from '@/components/marketing/Footer';
 import Link from 'next/link';
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { ArrowRight, TrendingUp, Globe, BarChart3, CheckCircle2, Users, Award, Zap, Shield, Target, Rocket } from 'lucide-react';
 
@@ -40,20 +39,30 @@ export default function HomePage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 px-6 overflow-hidden">
-        {/* Animated Gradient Background */}
+      <section className="relative pt-32 pb-20 px-6 overflow-hidden min-h-[80vh] flex items-center">
+        {/* Advanced Animated Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#FFE5E8] via-[#F5F5F7] to-[#FFE5E8] animate-gradient" />
 
-        {/* Floating Animated Shapes */}
-        <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-[hsl(var(--pink-accent))] opacity-40 blur-3xl animate-pulse-glow" />
-        <div className="absolute bottom-10 right-20 w-96 h-96 rounded-full bg-[hsl(var(--pink-accent))] opacity-30 blur-3xl animate-float" style={{ animationDelay: '1s' }} />
-        <div className="absolute top-40 right-40 w-32 h-32 bg-[hsl(var(--pink-accent))] opacity-50 animate-float" style={{ animationDelay: '2s' }} />
-        <div className="absolute bottom-40 left-40 w-48 h-48 rounded-full bg-[hsl(var(--brand-red))]/10 blur-2xl animate-pulse-glow" style={{ animationDelay: '3s' }} />
+        {/* Orbiting Shape Layers - Creates mesmerizing motion */}
+        <div className="absolute top-[10%] left-[15%] w-80 h-80 rounded-full bg-[hsl(var(--pink-accent))] opacity-50 blur-3xl animate-orbit-1" />
+        <div className="absolute top-[30%] right-[20%] w-96 h-96 rounded-full bg-[hsl(var(--brand-red))]/20 blur-3xl animate-orbit-2" />
+        <div className="absolute bottom-[15%] left-[25%] w-64 h-64 rounded-full bg-[hsl(var(--pink-accent))] opacity-40 blur-3xl animate-orbit-3" />
 
-        <div className="max-w-[1400px] mx-auto relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Hero Text */}
-            <div className="space-y-8 animate-fade-in">
+        {/* Pulsing Glow Effects */}
+        <div className="absolute top-[20%] right-[10%] w-48 h-48 rounded-full bg-[hsl(var(--brand-red))]/15 blur-2xl animate-pulse-glow" />
+        <div className="absolute bottom-[25%] right-[30%] w-56 h-56 rounded-full bg-[hsl(var(--pink-accent))] opacity-35 blur-3xl animate-pulse-glow" style={{ animationDelay: '1.5s' }} />
+
+        {/* Expanding Circles - Subtle depth effect */}
+        <div className="absolute top-[50%] left-[50%] w-[600px] h-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-[hsl(var(--brand-red))]/10 animate-expand-contract" />
+        <div className="absolute top-[50%] left-[50%] w-[800px] h-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-[hsl(var(--pink-accent))]/20 animate-expand-contract" style={{ animationDelay: '5s' }} />
+
+        {/* Shimmer overlay for subtle light effect */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent animate-shimmer pointer-events-none" />
+
+        <div className="max-w-[1400px] mx-auto relative z-10 w-full">
+          <div className="flex flex-col items-center text-center">
+            {/* Hero Text - Centered */}
+            <div className="space-y-8 animate-fade-in max-w-4xl">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight text-[hsl(var(--black))]">
                 GLOBAL REACH.
                 <br />
@@ -62,7 +71,7 @@ export default function HomePage() {
                 WORLDWIDE.
               </h1>
 
-              <p className="text-lg text-[hsl(var(--gray-text))] max-w-xl">
+              <p className="text-lg text-[hsl(var(--gray-text))] max-w-2xl mx-auto">
                 We transform ambitious businesses into global market leaders through strategic marketing excellence.
               </p>
 
@@ -74,10 +83,10 @@ export default function HomePage() {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
 
-              {/* Stats Counters */}
-              <div className="grid grid-cols-3 gap-6 pt-8">
+              {/* Stats Counters - Centered */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-8 max-w-3xl mx-auto">
                 <div>
-                  <div className="text-3xl font-bold text-[hsl(var(--brand-red))]">
+                  <div className="text-3xl md:text-4xl font-bold text-[hsl(var(--brand-red))]">
                     <AnimatedCounter end={500} suffix="+" />
                   </div>
                   <div className="text-xs text-[hsl(var(--gray-text))] uppercase tracking-wider mt-1">
@@ -85,7 +94,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-[hsl(var(--brand-red))]">
+                  <div className="text-3xl md:text-4xl font-bold text-[hsl(var(--brand-red))]">
                     <AnimatedCounter end={50} suffix="+" />
                   </div>
                   <div className="text-xs text-[hsl(var(--gray-text))] uppercase tracking-wider mt-1">
@@ -93,26 +102,13 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-[hsl(var(--brand-red))]">
+                  <div className="text-3xl md:text-4xl font-bold text-[hsl(var(--brand-red))]">
                     <AnimatedCounter end={98} suffix="%" />
                   </div>
                   <div className="text-xs text-[hsl(var(--gray-text))] uppercase tracking-wider mt-1">
                     Client Retention
                   </div>
                 </div>
-              </div>
-            </div>
-
-            {/* World Map Graphic */}
-            <div className="relative animate-slide-in">
-              <div className="relative w-full aspect-video">
-                <Image
-                  src="/generated/world-map-red.png"
-                  alt="Global Reach Visualization"
-                  fill
-                  className="object-contain"
-                  priority
-                />
               </div>
             </div>
           </div>
