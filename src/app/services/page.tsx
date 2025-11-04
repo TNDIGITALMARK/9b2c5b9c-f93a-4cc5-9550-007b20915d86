@@ -185,10 +185,10 @@ export default function ServicesPage() {
       {/* CTA Section */}
       <section className="py-20 px-6 bg-[hsl(var(--black))]">
         <div className="max-w-[1400px] mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-6 uppercase">
+          <h2 className="text-4xl md:text-5xl font-black mb-6 uppercase hero-text-dark">
             Ready to Transform Your Business?
           </h2>
-          <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+          <p className="text-xl mb-10 max-w-2xl mx-auto hero-subtext-dark">
             Let&apos;s discuss how our proven strategies can accelerate your global growth
           </p>
           <Link

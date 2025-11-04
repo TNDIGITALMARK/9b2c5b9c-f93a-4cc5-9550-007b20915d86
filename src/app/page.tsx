@@ -5,7 +5,7 @@ import { Footer } from '@/components/marketing/Footer';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { ArrowRight, TrendingUp, Globe, BarChart3, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, TrendingUp, Globe, BarChart3, CheckCircle2, Users, Award, Zap, Shield, Target, Rocket } from 'lucide-react';
 
 // Animated Counter Component
 function AnimatedCounter({ end, duration = 2000, suffix = '' }: { end: number; duration?: number; suffix?: string }) {
@@ -181,6 +181,220 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Our Approach Section */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-[hsl(var(--black))] mb-4 uppercase">
+              OUR APPROACH
+            </h2>
+            <div className="w-24 h-1 bg-[hsl(var(--brand-red))] mx-auto mb-6" />
+            <p className="text-lg text-[hsl(var(--gray-text))] max-w-2xl mx-auto">
+              We follow a proven methodology that combines strategic thinking with creative execution to deliver exceptional results.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Step 1 */}
+            <div className="relative">
+              <div className="bg-[hsl(var(--pink-accent))] rounded-xl p-8 h-full">
+                <div className="w-12 h-12 rounded-full bg-[hsl(var(--brand-red))] flex items-center justify-center mb-4 text-white font-bold text-xl">
+                  1
+                </div>
+                <h3 className="text-xl font-bold text-[hsl(var(--black))] mb-3 uppercase">
+                  Discovery
+                </h3>
+                <p className="text-[hsl(var(--gray-text))]">
+                  Deep dive into your business, market, and goals to understand your unique challenges and opportunities.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 2 */}
+            <div className="relative">
+              <div className="bg-[hsl(var(--pink-accent))] rounded-xl p-8 h-full">
+                <div className="w-12 h-12 rounded-full bg-[hsl(var(--brand-red))] flex items-center justify-center mb-4 text-white font-bold text-xl">
+                  2
+                </div>
+                <h3 className="text-xl font-bold text-[hsl(var(--black))] mb-3 uppercase">
+                  Strategy
+                </h3>
+                <p className="text-[hsl(var(--gray-text))]">
+                  Develop comprehensive strategies backed by market research, competitive analysis, and data insights.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 3 */}
+            <div className="relative">
+              <div className="bg-[hsl(var(--pink-accent))] rounded-xl p-8 h-full">
+                <div className="w-12 h-12 rounded-full bg-[hsl(var(--brand-red))] flex items-center justify-center mb-4 text-white font-bold text-xl">
+                  3
+                </div>
+                <h3 className="text-xl font-bold text-[hsl(var(--black))] mb-3 uppercase">
+                  Execution
+                </h3>
+                <p className="text-[hsl(var(--gray-text))]">
+                  Launch campaigns with precision, leveraging best-in-class tools and proven methodologies.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 4 */}
+            <div className="relative">
+              <div className="bg-[hsl(var(--pink-accent))] rounded-xl p-8 h-full">
+                <div className="w-12 h-12 rounded-full bg-[hsl(var(--brand-red))] flex items-center justify-center mb-4 text-white font-bold text-xl">
+                  4
+                </div>
+                <h3 className="text-xl font-bold text-[hsl(var(--black))] mb-3 uppercase">
+                  Optimization
+                </h3>
+                <p className="text-[hsl(var(--gray-text))]">
+                  Continuously monitor, analyze, and optimize performance to maximize ROI and drive growth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What Sets Us Apart Section */}
+      <section className="py-20 px-6 bg-[hsl(var(--background))]">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-[hsl(var(--black))] mb-4 uppercase">
+              WHAT SETS US APART
+            </h2>
+            <div className="w-24 h-1 bg-[hsl(var(--brand-red))] mx-auto mb-6" />
+            <p className="text-lg text-[hsl(var(--gray-text))] max-w-2xl mx-auto">
+              We combine global expertise with local market knowledge to deliver campaigns that resonate across borders.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Feature 1 */}
+            <div className="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-all">
+              <div className="w-14 h-14 rounded-lg bg-[hsl(var(--brand-red))] flex items-center justify-center mb-6">
+                <Users className="w-7 h-7 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-[hsl(var(--black))] mb-3 uppercase">
+                Expert Team
+              </h3>
+              <p className="text-[hsl(var(--gray-text))] leading-relaxed">
+                Our team of seasoned professionals brings decades of combined experience in global marketing, brand strategy, and digital innovation.
+              </p>
+            </div>
+
+            {/* Feature 2 */}
+            <div className="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-all">
+              <div className="w-14 h-14 rounded-lg bg-[hsl(var(--brand-red))] flex items-center justify-center mb-6">
+                <Award className="w-7 h-7 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-[hsl(var(--black))] mb-3 uppercase">
+                Proven Track Record
+              </h3>
+              <p className="text-[hsl(var(--gray-text))] leading-relaxed">
+                With 500+ successful campaigns across 50+ countries, we&apos;ve helped businesses of all sizes achieve remarkable growth.
+              </p>
+            </div>
+
+            {/* Feature 3 */}
+            <div className="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-all">
+              <div className="w-14 h-14 rounded-lg bg-[hsl(var(--brand-red))] flex items-center justify-center mb-6">
+                <Zap className="w-7 h-7 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-[hsl(var(--black))] mb-3 uppercase">
+                Agile Methodology
+              </h3>
+              <p className="text-[hsl(var(--gray-text))] leading-relaxed">
+                We adapt quickly to market changes and pivot strategies based on real-time data to ensure optimal performance.
+              </p>
+            </div>
+
+            {/* Feature 4 */}
+            <div className="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-all">
+              <div className="w-14 h-14 rounded-lg bg-[hsl(var(--brand-red))] flex items-center justify-center mb-6">
+                <Shield className="w-7 h-7 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-[hsl(var(--black))] mb-3 uppercase">
+                Trusted Partner
+              </h3>
+              <p className="text-[hsl(var(--gray-text))] leading-relaxed">
+                We build long-term relationships with our clients, becoming an extension of your team and investing in your success.
+              </p>
+            </div>
+
+            {/* Feature 5 */}
+            <div className="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-all">
+              <div className="w-14 h-14 rounded-lg bg-[hsl(var(--brand-red))] flex items-center justify-center mb-6">
+                <Target className="w-7 h-7 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-[hsl(var(--black))] mb-3 uppercase">
+                Results-Focused
+              </h3>
+              <p className="text-[hsl(var(--gray-text))] leading-relaxed">
+                Every strategy and campaign is designed with clear KPIs and measurable outcomes to demonstrate tangible business impact.
+              </p>
+            </div>
+
+            {/* Feature 6 */}
+            <div className="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-all">
+              <div className="w-14 h-14 rounded-lg bg-[hsl(var(--brand-red))] flex items-center justify-center mb-6">
+                <Rocket className="w-7 h-7 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-[hsl(var(--black))] mb-3 uppercase">
+                Innovation First
+              </h3>
+              <p className="text-[hsl(var(--gray-text))] leading-relaxed">
+                We stay ahead of marketing trends and leverage cutting-edge technologies to give your brand a competitive advantage.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Industry Experience Section */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-[hsl(var(--black))] mb-4 uppercase">
+              INDUSTRY EXPERIENCE
+            </h2>
+            <div className="w-24 h-1 bg-[hsl(var(--brand-red))] mx-auto mb-6" />
+            <p className="text-lg text-[hsl(var(--gray-text))] max-w-2xl mx-auto">
+              Deep expertise across multiple sectors, from startups to Fortune 500 companies.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="bg-[hsl(var(--pink-accent))] rounded-lg p-6 text-center">
+              <h3 className="font-bold text-[hsl(var(--black))] uppercase">Technology</h3>
+            </div>
+            <div className="bg-[hsl(var(--pink-accent))] rounded-lg p-6 text-center">
+              <h3 className="font-bold text-[hsl(var(--black))] uppercase">E-Commerce</h3>
+            </div>
+            <div className="bg-[hsl(var(--pink-accent))] rounded-lg p-6 text-center">
+              <h3 className="font-bold text-[hsl(var(--black))] uppercase">Finance</h3>
+            </div>
+            <div className="bg-[hsl(var(--pink-accent))] rounded-lg p-6 text-center">
+              <h3 className="font-bold text-[hsl(var(--black))] uppercase">Healthcare</h3>
+            </div>
+            <div className="bg-[hsl(var(--pink-accent))] rounded-lg p-6 text-center">
+              <h3 className="font-bold text-[hsl(var(--black))] uppercase">Consumer Goods</h3>
+            </div>
+            <div className="bg-[hsl(var(--pink-accent))] rounded-lg p-6 text-center">
+              <h3 className="font-bold text-[hsl(var(--black))] uppercase">Manufacturing</h3>
+            </div>
+            <div className="bg-[hsl(var(--pink-accent))] rounded-lg p-6 text-center">
+              <h3 className="font-bold text-[hsl(var(--black))] uppercase">Professional Services</h3>
+            </div>
+            <div className="bg-[hsl(var(--pink-accent))] rounded-lg p-6 text-center">
+              <h3 className="font-bold text-[hsl(var(--black))] uppercase">Hospitality</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us Section */}
       <section className="py-20 px-6 bg-[hsl(var(--background))] relative overflow-hidden">
         {/* Decorative Elements */}
@@ -197,7 +411,7 @@ export default function HomePage() {
                 READY TO GROW?
               </h3>
               <p className="text-lg text-[hsl(var(--gray-text))] mb-8">
-                Let&apos;s build something extraordinary together.
+                Let&apos;s build something extraordinary together. Our global marketing expertise combined with local market insights will help you expand into new markets with confidence.
               </p>
 
               <Link
@@ -218,7 +432,7 @@ export default function HomePage() {
                     Innovative Solutions
                   </h4>
                   <p className="text-[hsl(var(--gray-text))]">
-                    Cutting-edge strategies tailored to your business goals.
+                    Cutting-edge strategies tailored to your business goals, leveraging the latest marketing technologies and methodologies.
                   </p>
                 </div>
               </div>
@@ -230,7 +444,7 @@ export default function HomePage() {
                     Client-Centric Approach
                   </h4>
                   <p className="text-[hsl(var(--gray-text))]">
-                    Your success is our priority. We listen, adapt, and deliver.
+                    Your success is our priority. We listen, adapt, and deliver personalized solutions that align with your vision.
                   </p>
                 </div>
               </div>
@@ -242,7 +456,19 @@ export default function HomePage() {
                     Measurable Results
                   </h4>
                   <p className="text-[hsl(var(--gray-text))]">
-                    Data-driven insights that prove ROI and drive growth.
+                    Data-driven insights that prove ROI and drive growth with transparent reporting and continuous optimization.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <CheckCircle2 className="w-6 h-6 text-[hsl(var(--brand-red))] flex-shrink-0 mt-1" />
+                <div>
+                  <h4 className="font-bold text-[hsl(var(--black))] mb-1 uppercase">
+                    Global Network
+                  </h4>
+                  <p className="text-[hsl(var(--gray-text))]">
+                    Access to international markets through our extensive network of partners and local experts in 50+ countries.
                   </p>
                 </div>
               </div>
