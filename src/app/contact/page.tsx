@@ -54,10 +54,10 @@ export default function ContactPage() {
       <section className="relative pt-32 pb-16 px-6 bg-[hsl(var(--black))]">
         <div className="max-w-[1400px] mx-auto">
           <div className="text-center max-w-3xl mx-auto animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-black text-white mb-6 uppercase">
+            <h1 className="text-5xl md:text-6xl font-black mb-6 uppercase hero-text-dark">
               Let&apos;s Connect
             </h1>
-            <p className="text-xl text-gray-300">
+            <p className="text-xl hero-subtext-dark">
               Start your journey to global market leadership. We&apos;re ready to help you grow.
             </p>
           </div>
@@ -303,7 +303,7 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  className="w-full bg-[hsl(var(--brand-red))] text-white px-8 py-4 rounded-lg text-sm font-semibold uppercase tracking-wider hover:bg-[hsl(var(--brand-red-dark))] transition-all shadow-red hover:shadow-lg flex items-center justify-center gap-2 group"
+                  className="w-full bg-[hsl(var(--brand-red))] px-8 py-4 rounded-lg text-sm font-semibold uppercase tracking-wider hover:bg-[hsl(var(--brand-red-dark))] transition-all shadow-red hover:shadow-lg flex items-center justify-center gap-2 group btn-red-text"
                 >
                   Send Message
                   <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

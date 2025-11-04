@@ -41,10 +41,14 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-6 overflow-hidden">
-        {/* Pink Decorative Shapes */}
-        <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-[hsl(var(--pink-accent))] opacity-40 blur-3xl" />
-        <div className="absolute bottom-10 right-20 w-96 h-96 rounded-full bg-[hsl(var(--pink-accent))] opacity-30 blur-3xl" />
-        <div className="absolute top-40 right-40 w-32 h-32 bg-[hsl(var(--pink-accent))] opacity-50" />
+        {/* Animated Gradient Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#FFE5E8] via-[#F5F5F7] to-[#FFE5E8] animate-gradient" />
+
+        {/* Floating Animated Shapes */}
+        <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-[hsl(var(--pink-accent))] opacity-40 blur-3xl animate-pulse-glow" />
+        <div className="absolute bottom-10 right-20 w-96 h-96 rounded-full bg-[hsl(var(--pink-accent))] opacity-30 blur-3xl animate-float" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-40 right-40 w-32 h-32 bg-[hsl(var(--pink-accent))] opacity-50 animate-float" style={{ animationDelay: '2s' }} />
+        <div className="absolute bottom-40 left-40 w-48 h-48 rounded-full bg-[hsl(var(--brand-red))]/10 blur-2xl animate-pulse-glow" style={{ animationDelay: '3s' }} />
 
         <div className="max-w-[1400px] mx-auto relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -64,7 +68,7 @@ export default function HomePage() {
 
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 bg-[hsl(var(--brand-red))] text-white px-8 py-4 rounded-lg text-sm font-semibold uppercase tracking-wider hover:bg-[hsl(var(--brand-red-dark))] transition-all shadow-red hover:shadow-lg group"
+                className="inline-flex items-center gap-2 bg-[hsl(var(--brand-red))] px-8 py-4 rounded-lg text-sm font-semibold uppercase tracking-wider hover:bg-[hsl(var(--brand-red-dark))] transition-all shadow-red hover:shadow-lg group btn-red-text"
               >
                 START YOUR GLOBAL EXPANSION
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -198,7 +202,7 @@ export default function HomePage() {
 
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 bg-[hsl(var(--brand-red))] text-white px-8 py-4 rounded-lg text-sm font-semibold uppercase tracking-wider hover:bg-[hsl(var(--brand-red-dark))] transition-all shadow-red hover:shadow-lg group"
+                className="inline-flex items-center gap-2 bg-[hsl(var(--brand-red))] px-8 py-4 rounded-lg text-sm font-semibold uppercase tracking-wider hover:bg-[hsl(var(--brand-red-dark))] transition-all shadow-red hover:shadow-lg group btn-red-text"
               >
                 GET IN TOUCH
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

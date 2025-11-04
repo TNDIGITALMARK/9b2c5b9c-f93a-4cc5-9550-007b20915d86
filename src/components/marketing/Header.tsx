@@ -51,21 +51,21 @@ export function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <Link
-              href="/"
+              href="/services"
               className="text-sm font-medium text-[hsl(var(--black))] hover:text-[hsl(var(--brand-red))] transition-colors relative group"
             >
               Services
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[hsl(var(--brand-red))] group-hover:w-full transition-all duration-300" />
             </Link>
             <Link
-              href="/services"
+              href="/about"
               className="text-sm font-medium text-[hsl(var(--black))] hover:text-[hsl(var(--brand-red))] transition-colors relative group"
             >
               About
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[hsl(var(--brand-red))] group-hover:w-full transition-all duration-300" />
             </Link>
             <Link
-              href="/services"
+              href="/portfolio"
               className="text-sm font-medium text-[hsl(var(--black))] hover:text-[hsl(var(--brand-red))] transition-colors relative group"
             >
               Portfolio
@@ -83,7 +83,7 @@ export function Header() {
           {/* Contact Button (Desktop) */}
           <Link
             href="/contact"
-            className="hidden md:block bg-[hsl(var(--brand-red))] text-white px-6 py-2.5 rounded-lg text-sm font-semibold uppercase tracking-wider hover:bg-[hsl(var(--brand-red-dark))] transition-all shadow-red hover:shadow-lg"
+            className="hidden md:block bg-[hsl(var(--brand-red))] px-6 py-2.5 rounded-lg text-sm font-semibold uppercase tracking-wider hover:bg-[hsl(var(--brand-red-dark))] transition-all shadow-red hover:shadow-lg btn-red-text"
           >
             Get Started
           </Link>
@@ -108,21 +108,21 @@ export function Header() {
         <div className="md:hidden bg-white border-t border-[hsl(var(--border))] shadow-lg animate-fade-in">
           <nav className="flex flex-col px-6 py-4 gap-4">
             <Link
-              href="/"
+              href="/services"
               className="text-sm font-medium text-[hsl(var(--black))] hover:text-[hsl(var(--brand-red))] transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Services
             </Link>
             <Link
-              href="/services"
+              href="/about"
               className="text-sm font-medium text-[hsl(var(--black))] hover:text-[hsl(var(--brand-red))] transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               About
             </Link>
             <Link
-              href="/services"
+              href="/portfolio"
               className="text-sm font-medium text-[hsl(var(--black))] hover:text-[hsl(var(--brand-red))] transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
@@ -137,7 +137,7 @@ export function Header() {
             </Link>
             <Link
               href="/contact"
-              className="bg-[hsl(var(--brand-red))] text-white px-6 py-3 rounded-lg text-sm font-semibold uppercase tracking-wider hover:bg-[hsl(var(--brand-red-dark))] transition-all shadow-red text-center mt-2"
+              className="bg-[hsl(var(--brand-red))] px-6 py-3 rounded-lg text-sm font-semibold uppercase tracking-wider hover:bg-[hsl(var(--brand-red-dark))] transition-all shadow-red text-center mt-2 btn-red-text"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Get Started

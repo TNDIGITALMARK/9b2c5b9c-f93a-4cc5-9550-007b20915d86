@@ -73,10 +73,10 @@ export default function ServicesPage() {
       <section className="relative pt-32 pb-16 px-6 bg-[hsl(var(--black))]">
         <div className="max-w-[1400px] mx-auto">
           <div className="text-center max-w-3xl mx-auto animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-black text-white mb-6 uppercase">
-              SERVICES & PORTFOLIO
+            <h1 className="text-5xl md:text-6xl font-black mb-6 uppercase hero-text-dark">
+              OUR SERVICES
             </h1>
-            <p className="text-xl text-gray-300">
+            <p className="text-xl hero-subtext-dark">
               Comprehensive marketing solutions designed to accelerate your global growth
             </p>
           </div>
@@ -193,7 +193,7 @@ export default function ServicesPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-[hsl(var(--brand-red))] text-white px-10 py-5 rounded-lg text-sm font-semibold uppercase tracking-wider hover:bg-[hsl(var(--brand-red-dark))] transition-all shadow-red hover:shadow-lg group"
+            className="inline-flex items-center gap-2 bg-[hsl(var(--brand-red))] px-10 py-5 rounded-lg text-sm font-semibold uppercase tracking-wider hover:bg-[hsl(var(--brand-red-dark))] transition-all shadow-red hover:shadow-lg group btn-red-text"
           >
             Schedule a Consultation
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
