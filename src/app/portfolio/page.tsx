@@ -132,11 +132,11 @@ export default function PortfolioPage() {
         <div className="max-w-[1400px] mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[hsl(var(--black))] mb-4 uppercase">
-              Featured Case Studies
+              Featured Pilot Projects
             </h2>
             <div className="w-24 h-1 bg-[hsl(var(--brand-red))] mx-auto mb-6" />
             <p className="text-lg text-[hsl(var(--gray-text))] max-w-2xl mx-auto">
-              Discover how we&apos;ve helped businesses like yours achieve remarkable growth
+              Explore our internal proofs of concept and beta tests showcasing transformative business results
             </p>
           </div>
 
@@ -193,7 +193,7 @@ export default function PortfolioPage() {
                   </div>
 
                   <button className="inline-flex items-center gap-2 text-[hsl(var(--brand-red))] font-semibold text-sm uppercase tracking-wider hover:gap-3 transition-all group">
-                    Read Full Case Study
+                    Read Full Pilot Project
                     <ArrowRight className="w-4 h-4" />
                   </button>
                 </div>

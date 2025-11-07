@@ -18,32 +18,38 @@ const services = [
   {
     icon: Target,
     title: 'Digital Strategy and Planning',
-    description: 'Comprehensive digital roadmaps tailored to your market position and business objectives.'
+    description: 'Comprehensive digital roadmaps tailored to your market position and business objectives.',
+    priceRange: '$5,000 - $25,000'
   },
   {
     icon: Globe2,
     title: 'International Market Entry',
-    description: 'Expert guidance for expanding your business into new global markets with confidence.'
+    description: 'Expert guidance for expanding your business into new global markets with confidence.',
+    priceRange: '$15,000 - $50,000'
   },
   {
     icon: Palette,
     title: 'Brand Development and Positioning',
-    description: 'Create powerful brand identities that resonate with your target audience worldwide.'
+    description: 'Create powerful brand identities that resonate with your target audience worldwide.',
+    priceRange: '$10,000 - $35,000'
   },
   {
     icon: Megaphone,
     title: 'Multi-Channel Campaign Management',
-    description: 'Coordinated campaigns across digital, social, and traditional media channels.'
+    description: 'Coordinated campaigns across digital, social, and traditional media channels.',
+    priceRange: '$20,000 - $100,000+'
   },
   {
     icon: BarChart,
     title: 'Performance Analytics and Optimization',
-    description: 'Data-driven insights and continuous optimization to maximize your marketing ROI.'
+    description: 'Data-driven insights and continuous optimization to maximize your marketing ROI.',
+    priceRange: '$8,000 - $30,000'
   },
   {
     icon: Share2,
     title: 'Global Social Media Management',
-    description: 'Build and engage audiences across international social media platforms.'
+    description: 'Build and engage audiences across international social media platforms with culturally-adapted content and 24/7 community management.',
+    priceRange: '$3,000 - $15,000/month'
   }
 ];
 
@@ -110,9 +116,14 @@ export default function ServicesPage() {
                   <h3 className="text-lg font-bold text-[hsl(var(--black))] mb-3">
                     {service.title}
                   </h3>
-                  <p className="text-[hsl(var(--gray-text))] leading-relaxed">
+                  <p className="text-[hsl(var(--gray-text))] leading-relaxed mb-4">
                     {service.description}
                   </p>
+                  <div className="pt-4 border-t border-[hsl(var(--border))]">
+                    <p className="text-sm font-bold text-[hsl(var(--brand-red))] uppercase tracking-wider">
+                      {service.priceRange}
+                    </p>
+                  </div>
                 </div>
               );
             })}
@@ -172,7 +183,7 @@ export default function ServicesPage() {
                   </div>
 
                   <button className="inline-flex items-center gap-2 text-[hsl(var(--brand-red))] font-semibold text-sm uppercase tracking-wider hover:gap-3 transition-all group">
-                    View Case Study
+                    View Pilot Project
                     <ArrowRight className="w-4 h-4" />
                   </button>
                 </div>

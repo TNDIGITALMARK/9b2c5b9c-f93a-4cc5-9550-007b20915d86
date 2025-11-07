@@ -90,10 +90,10 @@ export default function ContactPage() {
                       Email Us
                     </h3>
                     <p className="text-[hsl(var(--gray-text))]">
-                      info@marketglobal.com
+                      info@milahsglobal.com
                     </p>
                     <p className="text-[hsl(var(--gray-text))]">
-                      support@marketglobal.com
+                      support@milahsglobal.com
                     </p>
                   </div>
                 </div>
@@ -107,10 +107,10 @@ export default function ContactPage() {
                       Call Us
                     </h3>
                     <p className="text-[hsl(var(--gray-text))]">
-                      +1 (555) 123-4567 (US)
+                      +1 (800) 555-0199 (US Business Line)
                     </p>
                     <p className="text-[hsl(var(--gray-text))]">
-                      +44 20 1234 5678 (UK)
+                      +1 (888) 555-0123 (Virtual Assistant Center)
                     </p>
                   </div>
                 </div>
@@ -262,6 +262,8 @@ export default function ContactPage() {
                       <option value="campaigns">Multi-Channel Campaigns</option>
                       <option value="analytics">Performance Analytics</option>
                       <option value="social">Social Media Management</option>
+                      <option value="global-social">Global Social Media Management</option>
+                      <option value="other">Other</option>
                     </select>
                   </div>
 

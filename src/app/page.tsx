@@ -127,7 +127,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Service Card 1 */}
-            <div className="bg-white border border-[hsl(var(--border))] rounded-xl p-8 hover:shadow-md transition-all group">
+            <Link href="/services" className="bg-white border border-[hsl(var(--border))] rounded-xl p-8 hover:shadow-md transition-all group block">
               <div className="w-16 h-16 rounded-lg bg-[hsl(var(--brand-red))] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <TrendingUp className="w-8 h-8 text-white" />
               </div>
@@ -137,13 +137,13 @@ export default function HomePage() {
               <p className="text-[hsl(var(--gray-text))] mb-6 leading-relaxed">
                 Develop winning strategies with our team and accelerate growth.
               </p>
-              <button className="bg-[hsl(var(--black))] text-white px-6 py-2.5 rounded-lg text-sm font-semibold uppercase tracking-wider hover:bg-[hsl(var(--brand-red))] transition-all">
+              <span className="inline-block bg-[hsl(var(--black))] text-white px-6 py-2.5 rounded-lg text-sm font-semibold uppercase tracking-wider group-hover:bg-[hsl(var(--brand-red))] transition-all">
                 Learn More
-              </button>
-            </div>
+              </span>
+            </Link>
 
             {/* Service Card 2 */}
-            <div className="bg-white border border-[hsl(var(--border))] rounded-xl p-8 hover:shadow-md transition-all group">
+            <Link href="/showcase" className="bg-white border border-[hsl(var(--border))] rounded-xl p-8 hover:shadow-md transition-all group block">
               <div className="w-16 h-16 rounded-lg bg-[hsl(var(--brand-red))] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Globe className="w-8 h-8 text-white" />
               </div>
@@ -153,13 +153,13 @@ export default function HomePage() {
               <p className="text-[hsl(var(--gray-text))] mb-6 leading-relaxed">
                 Launch big-scale and cross-channel campaigns.
               </p>
-              <button className="bg-[hsl(var(--black))] text-white px-6 py-2.5 rounded-lg text-sm font-semibold uppercase tracking-wider hover:bg-[hsl(var(--brand-red))] transition-all">
+              <span className="inline-block bg-[hsl(var(--black))] text-white px-6 py-2.5 rounded-lg text-sm font-semibold uppercase tracking-wider group-hover:bg-[hsl(var(--brand-red))] transition-all">
                 Learn More
-              </button>
-            </div>
+              </span>
+            </Link>
 
             {/* Service Card 3 */}
-            <div className="bg-white border border-[hsl(var(--border))] rounded-xl p-8 hover:shadow-md transition-all group">
+            <Link href="/services" className="bg-white border border-[hsl(var(--border))] rounded-xl p-8 hover:shadow-md transition-all group block">
               <div className="w-16 h-16 rounded-lg bg-[hsl(var(--brand-red))] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <BarChart3 className="w-8 h-8 text-white" />
               </div>
@@ -169,10 +169,10 @@ export default function HomePage() {
               <p className="text-[hsl(var(--gray-text))] mb-6 leading-relaxed">
                 Combine analytics and action to gain a holistic view.
               </p>
-              <button className="bg-[hsl(var(--black))] text-white px-6 py-2.5 rounded-lg text-sm font-semibold uppercase tracking-wider hover:bg-[hsl(var(--brand-red))] transition-all">
+              <span className="inline-block bg-[hsl(var(--black))] text-white px-6 py-2.5 rounded-lg text-sm font-semibold uppercase tracking-wider group-hover:bg-[hsl(var(--brand-red))] transition-all">
                 Learn More
-              </button>
-            </div>
+              </span>
+            </Link>
           </div>
         </div>
       </section>

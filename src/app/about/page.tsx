@@ -90,10 +90,10 @@ export default function AboutPage() {
               </h2>
               <div className="w-24 h-1 bg-[hsl(var(--brand-red))] mb-6" />
               <p className="text-lg text-[hsl(var(--gray-text))] leading-relaxed mb-6">
-                At Market Global, we believe every business deserves the opportunity to compete on the world stage. Our mission is to democratize access to world-class marketing expertise, helping companies of all sizes achieve extraordinary growth.
+                At Milah's Global, we empower businesses worldwide to unlock their full potential in the global marketplace. Our mission is to deliver exceptional marketing expertise that transforms ambitious companies into international market leaders, regardless of their size or starting point.
               </p>
               <p className="text-lg text-[hsl(var(--gray-text))] leading-relaxed">
-                Since our founding in 2015, we&apos;ve helped over 200 companies expand into new markets, increase their revenue by an average of 300%, and build brands that resonate with audiences worldwide.
+                Since our founding, we've partnered with over 200 companies across 50+ countries, helping them navigate complex international markets, scale their operations, and achieve sustainable growth that exceeds industry standards.
               </p>
             </div>
 

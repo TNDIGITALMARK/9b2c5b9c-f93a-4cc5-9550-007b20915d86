@@ -44,7 +44,7 @@ export function Header() {
               </svg>
             </div>
             <span className="text-[hsl(var(--black))] font-bold text-sm tracking-wider uppercase">
-              MARKET GLOBAL
+              MILAH'S GLOBAL
             </span>
           </Link>
 
@@ -55,6 +55,13 @@ export function Header() {
               className="text-sm font-medium text-[hsl(var(--black))] hover:text-[hsl(var(--brand-red))] transition-colors relative group"
             >
               Services
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[hsl(var(--brand-red))] group-hover:w-full transition-all duration-300" />
+            </Link>
+            <Link
+              href="/showcase"
+              className="text-sm font-medium text-[hsl(var(--black))] hover:text-[hsl(var(--brand-red))] transition-colors relative group"
+            >
+              Showcase
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[hsl(var(--brand-red))] group-hover:w-full transition-all duration-300" />
             </Link>
             <Link
@@ -113,6 +120,13 @@ export function Header() {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Services
+            </Link>
+            <Link
+              href="/showcase"
+              className="text-sm font-medium text-[hsl(var(--black))] hover:text-[hsl(var(--brand-red))] transition-colors py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Showcase
             </Link>
             <Link
               href="/about"
